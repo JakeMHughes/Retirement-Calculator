@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    grid-template-areas:
+    "retirement graph";
+    grid-template-columns: 2fr 5fr;
+    gap: 5px;
+    background-color: #2196F3;
+    padding: 5px;
+}
+
+.account {
+    padding: 5px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+
+.account > label {
+    text-align: left;
+}
+.account > p {
+    text-align: left;
+}
+
+.container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+.container > div.retirement {
+    grid-area: retirement;
+    text-align: center;
+}
+.container > div.graph {
+    grid-area: graph;
+}
+.container > div.content {
+    grid-area: content;
+}
+.container > div.footer {
+    grid-area: footer;
+}
