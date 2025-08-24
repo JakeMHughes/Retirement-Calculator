@@ -373,7 +373,7 @@ function updateData() {
 function getLocalStorage() {
     for (const element of document.getElementsByTagName('input')) {
         let item = localStorage.getItem(element.id)
-        if(typeof item === 'number') {
+        if(item == null) {
             element.value = localStorage.getItem(element.id)
         }
     }
@@ -385,3 +385,4 @@ function setLocalStorage() {
         localStorage.setItem(element.id, element.value)
     }
 }
+
